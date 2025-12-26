@@ -113,6 +113,8 @@ Ttre/
 ├── requirements.txt      # Python dependencies
 ├── sports_odds_client.py # API client wrapper
 ├── example_usage.py      # Example usage script
+├── test_setup.py         # Setup validation test script
+├── QUICKSTART.md         # Quick start guide
 └── README.md            # This file
 ```
 
