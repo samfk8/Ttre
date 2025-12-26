@@ -71,7 +71,7 @@ export const BetDetail: React.FC<BetDetailProps> = ({ bet, onClose }) => {
             <span className="value">{bet.probability.toFixed(1)}%</span>
           </div>
           <div className="detail-row">
-            <span className="label">Bookmaker Margin:</span>
+            <span className="label">Book's Implied Prob:</span>
             <span className="value">{((1 / bet.odds) * 100).toFixed(1)}%</span>
           </div>
         </div>

@@ -30,6 +30,10 @@ export const formatDateTime = (isoString: string): string => {
 
 export const formatOdds = (odds: number): string => {
   // Convert decimal odds to American odds
+  if (odds <= 1.0) {
+    return 'N/A'; // Invalid odds
+  }
+  
   if (odds >= 2.0) {
     return `+${Math.round((odds - 1) * 100)}`;
   } else {
